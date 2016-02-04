@@ -7,7 +7,7 @@ public abstract class Employee {
     protected double salary;
     protected double rate;
     protected int hoursForWeek;
-
+    protected String fullName;
 
     public double calcPay(){
         return -1;
@@ -28,7 +28,11 @@ public abstract class Employee {
     public void setSalary(double sal){
         salary = sal;
     }
-    public double getSalary(){
-        return salary;
+    public double getSalary(){return salary;}
+    public void setName(String name){
+        fullName = name;
+    }
+    public String getName(){
+        return fullName;
     }
 }
